@@ -1,0 +1,974 @@
+* {
+    box-sizing: border-box;
+    /* outline: 3px solid red; */
+}
+
+
+html {
+    /* background-color:#655d8c; */
+    background-image: radial-gradient(circle, #eeaeca, #94bbe9, #655d8c);
+    height: 1100px;
+    scroll-behavior: smooth;
+    
+}
+ 
+
+.wrapper, body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 19px;
+    background-color: whitesmoke;
+    max-width: 1200px;
+    margin: auto auto;
+    box-shadow: 0px 0px 3px 2px ;
+    position: relative;
+    
+}
+
+
+#header, #contacts-header, #relatedorgs-header {
+    background-image: url(/images/banner.jpg), url(/images/banner.jpg);
+    color: white;
+    font-size: 2.5em;
+    background-size: cover;
+    background-clip: border-box;
+    text-align: center;
+    padding: 15px;
+    max-width: 1200px;
+    box-shadow: 10px 10px 10px black;
+    position: relative;
+    text-shadow: 3px 3px black;
+}
+
+
+nav {
+    text-align: center;
+    
+}
+
+
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    /* background-color: #567faf; */
+    background-color: #94bbe9;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: hsl(23, 64%, 66%);
+    color: white;
+}
+
+
+main {
+    max-width: 1200px;
+    padding: 5px;
+    position: relative;
+}
+
+
+.main-content {
+    line-height: 2em;
+    width: 65%;
+    margin: 20px;
+    margin-top: 0px;
+    float: left;
+   font-size: 21px;
+} 
+
+
+.sidebar {
+    display: inline-block;
+    position: relative;
+    line-height: 2em;
+    width: 30%;
+    margin-bottom: 50px;  
+    top: 20px;
+}
+
+
+#sidebar-image {
+    width: 100%;
+    box-shadow: 5px 5px 5px black;
+    border: 1px solid black;
+}
+
+
+#sidebar-text {
+    margin-top: 40px;
+    padding: 10px;
+    border: 2px dashed #562a0a;
+    text-align: center;
+    font-style: italic;  
+    position: relative;
+    right: 0;
+}
+
+
+#artist-link {
+    display: block;
+    font-weight: bold;
+    font-style: normal; 
+}
+
+.donation-btn button {
+    padding: 10px;
+    font-size: 1.0em;
+
+}
+
+.donation-btn button a:hover, .donation-btn button:hover {
+    color: rgb(238, 157, 6);
+    background-color: #567faf;
+}
+
+.footer, .contacts-footer, #otherorgs-footer {
+    position: relative;
+    top: 135px;
+    bottom: 0px;
+    padding: 45px;
+    width: 100%;
+   max-width: 1200px;
+    text-align: center;
+    /* background-color: #f5852c; */
+    background-color: gray;
+    border: 3px solid rgb(0, 0, 0);
+    clear: both;
+    box-shadow: 0 0 5px 1px;
+}
+
+
+/* Contacts page-specific styles START */
+
+.contacts-main {
+    display: inline;
+    line-height: 3.6em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 1.02em;
+}
+
+.contacts.main h3{
+    float: left;
+    width: 20px;
+}
+
+.contacts-links a {
+    text-decoration: none;
+    font-weight: 150;
+}
+
+#contacts-hours {
+    text-indent: 2em;
+    font-weight: lighter;
+    margin: 0;
+    
+}
+
+#contacts-image {
+    display: inline;
+    float: right;
+    margin: 40px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+
+/* Contacts page-specific styles END */
+
+/* Related Nonprofit orgs. page-specific styles START */
+
+#relatedorgs-image {
+    float: right;
+    margin-top: 30px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px 10px gray;
+
+}
+
+.relatedorgs-linklist {
+    margin-bottom: 200px;
+    margin-top: 10px;
+    line-height: 1.2em;
+    text-decoration: none;
+}
+
+.relatedorgs-linklist a, .sections-wrapper a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.relatedorgs-linklist a:visited, .sections-wrapper a:visited {
+    text-decoration: none;
+    color: rgba(87, 13, 87, 0.733);
+    font-weight: bold;
+}
+
+.sections-wrapper section {
+    border: 4px solid black;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.sections-wrapper h5 {
+    background-color: hsl(203, 61%, 78%);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#otherorgs-footer {
+    position: relative;
+    bottom: 0;
+
+    margin-top: 200px;
+}
+
+/* Related Nonprofit orgs. page-specific styles END */
+
+/* Media styles for HOME page START */
+
+@media only screen and (max-width: 480px) {
+    nav a {
+        display: grid;
+        margin: 1px 15px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0;
+        background-color: #94bbe9;
+    }
+    nav {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    body, main {
+        margin: 0 0;
+    }
+
+    #header {
+        box-shadow: none;
+        margin-top: .03em;
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+        font-size: 1.9em;
+    }
+
+    .main-content {
+        width: 95%;
+        margin-left: 3px;
+    }
+
+    br {
+        display: none;
+    }
+
+   
+    #sidebar-text, #sidebar-image {
+        display: inline-block;
+        width: 85vw;
+        height: auto;
+    }
+
+    .sidebar {
+        max-width: 90vw;
+        margin: auto auto;
+    }
+
+    .donation-btn {
+        font-size: small;
+    }
+
+
+
+    }
+/* Media styles for HOME page END */
+
+/* Media styles for OTHERORGS page START */
+
+@media only screen and (max-width: 480px) {
+
+    #relatedorgs-header {
+        box-shadow: none;
+        margin-top: .03em;
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+
+    #relatedorgs-image {
+        width: 80vw;
+        bottom: 10px;
+        box-shadow: 0 0 3px 4px gray;
+    }
+
+    .relatedorgs-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .relatedorgs-linklist  {
+        order: -1;
+        margin-bottom: 0;
+    }
+
+    hr {
+        margin-top: 30px;
+    }
+
+    .sections-wrapper {
+        width: 95vw;
+        height: auto;
+    }
+}
+
+/* Media styles for OTHERORGS page END */
+
+/* Media styles for CONTACT US page START */
+
+@media only screen and (max-width: 480px) {
+
+    #contacts-header {
+        box-shadow: none;
+        margin-top: .03em;
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+
+    #contacts-image {
+        width: 80vw;
+        bottom: 10px;
+        box-shadow: 0 0 3px 4px gray;
+    }
+
+    .contacts-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts-main {
+        order: -1;
+    }
+
+    .contacts-main h3 {
+        font-size: larger;
+        line-height: 2em;
+    }
+
+    .contacts-links li a{
+        line-height: 0em;
+    }
+
+    .contacts-links {
+        line-height: 3em;
+        font-weight: 150;
+    }
+}
+/* Media styles for CONTACT US page END */
+
+@media only screen and (max-width: 1000px) and (min-width: 481px) {
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        
+    }
+
+    nav a {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content {
+        width: 95%;
+        margin-left: 5px;
+    }
+
+    #sidebar-text, #sidebar-image {
+        max-width: 180%;
+        width: 220%;
+        height: auto;
+    }
+
+    .sidebar {
+        position: relative;
+        float: none;
+        
+    }
+
+    .relatedorgs-linklist h2 {
+        line-height: 1em;
+    }
+
+    .relatedorgs-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    .relatedorgs-linklist {
+        order: -1;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        margin-top: 20px;
+    }
+
+    #relatedorgs-image {
+        height: 90%;
+    }
+}
+
+@media only screen and (max-width: 808px) and (min-width: 588px) {
+
+    .contacts-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 482px) {
+    
+    .sidebar {
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+
+    #sidebar-image, #sidebar-text {
+        width: 55vw;
+        float: right;
+        margin-right: 7vw;
+    }
+}
+
+/* Endagered List page-specific styles START */
+
+#endangeredlist-p {
+    line-height: 1.8em;
+    font-size: 1.2em;
+    max-width: 75vw;
+    margin-left: 15px;
+}
+
+.endangeredlist-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 1em;
+    
+}
+
+.endangered-sidebar img {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.endangered-sidebar figure {
+    position: sticky;
+    top: 10vh;
+}
+
+dt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    margin-left: 15px;
+}
+
+dd {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+}
+
+.endangeredlist-main-pic img{
+    width: auto;
+    height: 55vh;
+    border-radius: 3px;
+}
+
+.endangered-sidebar figcaption {
+    padding: 20px;
+    line-height: 1.4em;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+.endangered-main-grid {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    padding-bottom: 10px;
+}
+
+.endangered-adspace {
+    background-color:hsl(203, 61%, 78%);
+    border-radius: 5px;
+}
+
+.endangered-adspace h1{
+    font-size: 100%;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+/* Endagered List page-specific styles END */
+
+/* Endagered List device-specific styles START */
+
+@media only screen and (max-width: 1100px) and (min-width: 500px) {
+
+    
+    .endangeredlist-main-pic img {
+        width: 90vw;
+        height: auto;
+    }
+
+    .footer {
+        position: relative;
+    }
+
+    #header {
+        font-size: 2.5em;
+        
+    }
+
+    .endangered-main-grid {
+        width: 95vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .endangeredlist-main-pic img {
+        width: 90vw;
+        height: auto;
+    }
+
+    .endangered-sidebar img {
+        height: 45vh;
+        width: auto;
+    }
+
+    .endangered-sidebar {
+        display: block;
+        
+    }
+
+    .endangeredlist-grid {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    #endangeredlist-p {
+        font-size: 20px;
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    dt, dd {
+        margin-bottom: 20px;
+        padding-right: 7px;
+    }
+}
+
+@media only screen and (max-width: 1101px) {
+    .endangered-adspace {
+        display: none;
+    }
+}
+
+/* Endagered List device-specific styles END */
+
+/* Donations Page-specific styles START */
+
+.table {
+    margin: 30px 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.volunteer-link h3 {
+    text-align: center;
+    padding-right: 10%
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table table {
+    display: inline-block;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    
+}
+
+table th, table td {
+    border: none;
+    padding: 13px;
+    margin-bottom: 10px;
+    width: 27%;
+}
+
+table td {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+table tr:nth-of-type(even) {
+    background: rgba(112, 173, 189, .4);
+}
+table tr:nth-of-type(odd) {
+    background: rgba(128, 128, 128, .4);
+}
+table th {
+    background-color: rgba(82, 76, 112, .7);
+    padding: 10px;
+}
+
+table caption {
+    font-size: 25px;
+    margin: 5px;
+    font-weight: 100;
+}
+
+.donation-form {
+    background-color: hsl(0, 0%, 83%);
+    margin-bottom: 100px;
+    max-width: 70%;
+}
+
+.pay-button {
+    background-color: rgba(0, 131, 192, 0.582);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#pay {
+    margin-top: 5px;
+}
+
+legend {
+    text-align: center;
+    font-size: 30px;
+}
+
+fieldset {
+    padding-bottom: 40px;
+}
+
+#comments-submit, #comments-reset {
+    font-size: 17px;
+}
+
+.details {
+    display: none;
+}
+
+.volunteer-table {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.comment-link {
+    text-decoration: none;
+    padding: 25px;
+   float: right;
+}
+
+.comments-section {
+    margin-left: 20px;
+}
+
+#full-list {
+    display: block
+}
+
+#more {
+    color: #0066cc;
+    cursor: pointer;
+    margin-left: 14%;
+}
+
+.volunteer-table th  {
+    width: 28%;
+}
+
+#donate-img {
+    width: 35%; 
+    height: 35%; 
+    border-radius: 20px;
+}
+
+.donation-grid {
+    display: flex;
+    gap: 40px;
+    
+    padding: 10px;
+}
+
+
+/* Donations Page-specific styles END */
+
+/* Image Gallery Page-specific styles START */
+
+.video-intro {
+    text-align: center;
+    border: 3px groove black;
+    background-color: hsl(35, 54%, 88%);
+    margin-top: 25px;
+}
+
+.video-intro h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.video-intro video {
+    border-radius: 30px;
+    padding: 2px;
+    margin-bottom: 10px;
+    max-width: 285px;
+}
+
+
+
+.image-gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    row-gap: 70px;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    padding: 5px;
+    padding-top: 20px;
+    border-top: dashed black;
+    border-bottom: dashed black;
+    padding-bottom: 20px;
+}
+
+.image-gallery-grid img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#imagegallery-h2 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    margin-top: 50px;
+
+}
+
+.img-gallery-top {
+    text-align: center;
+    margin-top: 30px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 900;
+    
+}
+
+.image-gallery-grid img:hover {
+    transition: .30s ease-in;
+    padding: 5px;
+    outline: 3px solid rgb(119, 62, 73);
+    border: inset;
+    box-shadow: 0px 0px 5px 5px;
+}
+
+/* Image Gallery Page-specific styles END */
+
+
+/* Image Gallery Media-specific styles START */
+
+@media only screen and (max-width:1187px) {
+
+    .video-intro {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media only screen and (max-width:920px) {
+
+    .image-gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .img-gallery-grid img {
+        width: 30%; 
+    }
+}
+
+@media only screen and (max-width:385px) {
+
+    .intro-vids-flex video{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Image Gallery Media-specific styles END */
+
+/* Donations page Media-specific styles START */
+
+@media only screen and (max-width:637px) {
+
+    .comments-grid textarea {
+        max-width: 90vw;
+    }
+
+}
+
+@media only screen and (max-width:1197px) {
+
+    .donation-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    #donate-img {
+        margin-right: 10px;
+        align-self: center;
+        width: 40%;
+        display: flex;
+        flex: 20em;
+        width: 35em;
+        
+    }
+
+    .donation-form fieldset {
+        width: 90vw;
+        
+    }
+
+    .donation-form {
+        max-width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 5px;
+    }
+
+   #donate-img {
+       display: none;
+   }
+
+   #hidden-donate-img {
+       max-width: 75%;
+       margin-right: auto;
+       margin-left: auto;
+       margin-top: 20px;
+       border-radius: 20px;
+   }
+}
+
+@media only screen and (max-width:818px) {
+
+    .donation-form fieldset {
+        display: grid;
+       border: none;
+    }
+
+    .pay-button {
+        width: 70%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .donation-grid {
+        display: block !important;
+    }
+
+    #hidden-donate-img {
+        margin-left: 65px;
+    }
+}
+
+@media only screen and (min-width:1197px) {
+    #hidden-donate-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:677) {
+    
+    #donate-img img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:343) {
+
+    table td {
+        padding: 3px;
+    }
+}
+/* Donations page Media-specific styles END */
+
+    
+
+
+
+
+
+
+
+
+

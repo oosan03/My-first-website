@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/orglogo/logo.jpg" rel="icon" type="image/jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/styles.css" rel="stylesheet">
+    <link href="/orglogo/logo.jpg" rel="icon" type="image/jpg">
+    <title>Contacts</title>
+</head>
+<body>
+    <div class="contacts-banner">
+        <header>
+            <h1 id="contacts-header">Contacts</h1>
+
+            <nav>
+                <a href="/index.html">Home</a>
+                <a href="endangered.html">Endangered List</a>
+                <a href="imagegallery.html">Image Gallery</a>
+                <a href="otherorgs.html">Other Organizations</a>
+                <a href="donation.html">Donations</a>
+                <a href="contacts.html">Contact Us</a>
+                
+            </nav>  
+        </header> 
+    </div>
+
+   <main class="contacts-flex">
+
+    <a href="https://unsplash.com/photos/CNbRsQj8mHQ" target="_blank">
+        <img id="contacts-image"src="/images/contactus.jpg" alt="Image of text 'Contact Us' arranged with cube blocks" width="400">
+    </a>
+
+    <div class="contacts-main">
+
+    <h3>Contact us through any of these Socials:</h3>
+    <ul class="contacts-links">
+        <li>Email us at <a href="mailto:osan2@student.cccs.edu">nonprofit@flora.org</a></li>
+        <li>Call us at <a href="tel:777-777-7777">1-800-FLORALS</a></li>
+        <p id="contacts-hours" style="font-family:Arial, Helvetica, sans-serif">Phone hours: 7AM - 7PM (Mountain Standard Time)</p>
+        <li>Tweet at us <a href="https://www.twitter.com" target="_blank">@Flora</a></li>
+        <li>Visit our <a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+    </ul>
+
+    
+
+    </div>
+
+   </main>
+
+   <div class="footer"><footer>Copyright &copy; Flora.org <span id="currentYear"></span> &nbsp;&nbsp;&nbsp; Last Updated: 2/26/2022 &nbsp;&nbsp;<a href="/subPages/contacts.html" style="text-decoration:none;">Contact Us</a></footer></div>
+   
+   <script>
+    var date = new Date();
+    var year = date.getFullYear();
+    document.getElementById('currentYear').innerHTML = year; 
+</script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/orglogo/logo.jpg" rel="icon" type="image/jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles.css" rel="stylesheet">
+    <title>Donations</title>
+    <script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function() {
+   $('#more').click(function(){
+       $('.details').slideToggle();
+   });
+});
+</script>
+</head>
+<body>
+    
+    <div class="wrapper">   
+        <header>
+            <h1 id="header">Flora</h1>
+
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="/subPages/endangered.html">Endangered List</a>
+                <a href="/subPages/imagegallery.html">Image Gallery</a>
+                <a href="/subPages/otherorgs.html">Other Organizations</a>
+                <a href="/subPages/donation.html">Donations</a>
+                <a href="/subPages/contacts.html">Contact Us</a>
+                
+            </nav>
+        </header>
+        <main></main>
+    
+        <h1 style="text-align:center; font-weight: 500;">Organization Roster</h1>
+        <div class="table">
+        <table border="3">
+        <caption>Organization Leaders at our 3 locations</caption>
+            <tr>
+                <th id="name" scope="col">Name</th>
+                <th id="location" scope="col">Located</th>
+                <th id="contact" scope="col">Contact</th>
+            </tr>
+            <tr>
+                <td headers="name">Dr. Sanchez</td>
+                <td headers="location">New Zealand Office</td>
+                <td headers="contact">Sanchez @flora.com</td>
+            </tr>
+            <tr>
+                <td headers="name">Diana Sanchez</td>
+                <td headers="location">Japan Office</td>
+                <td headers="contact">Diana @flora.com</td>
+            </tr>
+            <tr>
+                <td headers="name">Oo San</td>
+                <td headers="location">United States Office</td>
+                <td headers="contact">oosan @flora.com</td>
+            </tr>
+        </table>
+        </div>
+
+<!-- Hidden Tables -->
+
+
+        <div class="volunteer-link">
+        <h3 id="full-list"><a id="more" title="Click for the full list of our volunteers">Full list</a> of Volunteer members</h3></div>
+
+        <div class="details">
+            <table border="2" class="volunteer-table">
+            <caption>Flora  Volunteer members</caption>
+                <tr>
+                    <th>Name</th>
+                    <th>Located</th>
+                    <th>Contact</th>
+                <tr>
+                <tr>
+                    <td>Itzel Howe</td>
+                    <td>United States Office</td>
+                    <td>contact @flora.com</td>
+                </tr>
+                <tr>
+                    <td>Linda Jarvis</td>
+                    <td>Japan Office</td>
+                    <td>contact @flora.com</td>
+                </tr>
+                <tr>
+                    <td>Cheyenne Woods</td>
+                    <td>New Zealand Office</td>
+                    <td>contact @flora.com</td>
+                </tr>
+                <tr>
+                    <td>Devan Serrano</td>
+                    <td>Japan Office</td>
+                    <td>contact @flora.com</td>
+                </tr>
+                <tr>
+                    <td>Amira Dickerson</td>
+                    <td>New Zealand Office</td>
+                    <td>contact @flora.com</td>
+                </tr>
+                <tr>
+                    <td>Ainsley Walsh</td>
+                    <td>United States Office</td>
+                    <td>contact @flora.com</td>
+                </tr>
+                <tr>
+                    <td>Alfonso Shields</td>
+                    <td>New Zealand Office</td>
+                    <td>contact @flora.com</td>
+                </tr>
+                <tr>
+                    <td>Connor Olson</td>
+                    <td>United States Office</td>
+                    <td>contact @flora.com</td>
+                </tr>
+                <tr>
+                    <td>Aliyah Ramirez</td>
+                    <td>Japan Office</td>
+                    <td>contact @flora.com</td>
+                </tr>
+        
+                
+            </table>
+
+        </div>
+
+    </div><hr id="donations">
+
+    <h1 style="text-align:center; padding-bottom:10px;">Donations</h1><div class="donation-grid">
+    <div class="donation-form">
+
+        <form name="donation-form" method="post" id="donation-form" action="http://webdevbasics.net/scripts/demo.php">
+
+            <fieldset>
+                <legend>Card Information</legend><br>
+                <label for="fname">First Name: <input type="text" name="fname" id="fname" required="required" placeholder="John"></label>
+&nbsp;&nbsp;
+                <label for="lname">Last Name: <input type="text" name="lname" id="lname" required="required" placeholder="Doe"></label>
+
+                <br><br><br>
+
+                <label for="card-number" style="margin-top: 20px;">Card number: <input type="tel" name="card-number" id="card-number" placeholder="1234-0000-0000-0000" required="required"></label>
+&nbsp;&nbsp;
+                <label for="expiry-date">Expiry date: <input type="tel" name="expiry-date" id="expiry-date" placeholder="MM / YY" size="5" required="required"></label>
+&nbsp;&nbsp;
+                <label for="security-code">Security code: <input type="tel" name="security-code" id="security-code" size="2" required="required"></label>
+&nbsp;&nbsp;<br><br><br>
+                <label for="postal-code">ZIP/Postal code: <input type="tel" name="postal-code" id="postal-code" required="required" size="9"></label>
+&nbsp;&nbsp;
+                <div class="pay-button" style="display: inline;"><label for="amount">Amount: $<input type="tel" name="amount" id="amount" required="required" size="6"></label>
+
+                <label for="pay"><input type="submit" value="Donate" name="pay" id="pay" required="required" style="font-size: 18px;"></label></div>
+
+            </fieldset>
+        </form>
+        </div>
+        
+        <img id="donate-img" src="/images/donate1.jpg" alt="Monetary change in hands with a caption of 'make a change'" title="Photo by @fkaregan">
+
+        <img id="hidden-donate-img" src="/images/donate1.jpg" alt="Monetary change in hands with a caption of 'make a change'" title="Photo by @fkaregan">
+
+    </div>
+<hr>
+        <div class="comments-section" id="comments">
+            <h2>Leave any comments or suggestions</h2>
+        <form name="comments" id="comments" method="post"  action="http://webdevbasics.net/scripts/demo.php">
+            <!-- http://webdevbasics.net/scripts/demo.php -->
+            
+            <div class="comments-grid">
+
+                <div class="textarea"><label for="comments">
+                    <textarea name="comments" id="comments" cols="80" rows="10"></textarea>
+                </label></div>
+
+                <label for="comments-submit" id="comments-submit">
+                    <input type="submit" id="comments-submit" value="Submit">
+                </label>
+                <label for="comments-reset" id="comments-reset">
+                    <input type="reset" value="Clear all" id="comments-reset">
+                </label>
+            </div>
+            
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+    
+
+   
+ 
+</main>
+<div class="footer"><footer>Copyright &copy; Flora.org <span id="currentYear"></span> &nbsp;&nbsp;&nbsp; Last Updated: 2/26/2022 &nbsp;&nbsp;<a href="/subPages/contacts.html" style="text-decoration:none;">Contact Us</a></footer></div>
+
+<script>
+    var date = new Date();
+    var year = date.getFullYear();
+    document.getElementById('currentYear').innerHTML = year; 
+</script>
+
+</div>
+</body>
+</html>
